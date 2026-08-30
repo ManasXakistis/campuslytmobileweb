@@ -1,0 +1,66 @@
+.admin-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-hero);
+  padding: 24px;
+}
+.admin-login__card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-lg);
+}
+.admin-login__logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+.admin-login__logo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+.admin-login__sub { font-size: 13.5px; margin-bottom: 4px; }
+.admin-login__demo {
+  font-size: 12px;
+  background: var(--overlay-tint);
+  color: var(--text-primary);
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+}
+.admin-login__card label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.admin-login__card input {
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+.admin-login__error {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--danger);
+  font-size: 13px;
+}

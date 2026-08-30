@@ -1,0 +1,18 @@
+.trust { background: var(--surface); }
+.trust__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+.trust__item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.trust__item svg { color: var(--secondary); flex-shrink: 0; margin-top: 3px; }
+.trust__item h4 { font-size: 15.5px; color: var(--text-primary); margin-bottom: 4px; }
+.trust__item p { font-size: 14px; }
+
+@media (max-width: 700px) {
+  .trust__grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,74 @@
+.seniors__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+.seniors__points {
+  list-style: none;
+  padding: 0;
+  margin: 26px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.seniors__points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--text-primary);
+}
+.seniors__points svg { color: var(--secondary); flex-shrink: 0; }
+
+.seniors__visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.seniors__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 10px 20px 10px 10px;
+  box-shadow: var(--shadow-sm);
+  width: 200px;
+}
+.seniors__card:nth-child(2) { margin-left: 60px; }
+.seniors__card:nth-child(3) { margin-right: 60px; }
+.seniors__avatar {
+  width: 34px; height: 34px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: var(--font-display); font-weight: 700; font-size: 13px;
+}
+.seniors__card--primary .seniors__avatar { background: var(--primary); }
+.seniors__card--accent .seniors__avatar { background: var(--accent); }
+.seniors__card--secondary .seniors__avatar { background: var(--secondary); }
+.seniors__card span { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+
+.seniors__lines { display: none; }
+
+@media (max-width: 900px) {
+  .seniors__inner { grid-template-columns: 1fr; }
+  .seniors__card:nth-child(2), .seniors__card:nth-child(3) { margin: 0; }
+}
+
+@media (max-width: 600px) {
+  .seniors__inner {
+    gap: 34px;
+  }
+
+  .seniors__points li {
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .seniors__card {
+    width: min(200px, 78vw);
+  }
+}

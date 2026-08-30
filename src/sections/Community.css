@@ -1,0 +1,7 @@
+.community__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+@media (max-width: 980px) { .community__grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .community__grid { grid-template-columns: repeat(2, 1fr); } }

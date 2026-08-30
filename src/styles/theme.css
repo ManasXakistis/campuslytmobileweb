@@ -1,0 +1,53 @@
+:root {
+  /* Palette sampled directly from the CampusLYT app logo: blue -> violet -> magenta */
+  --primary: #7C5CFC;
+  --primary-dark: #5433D9;
+  --secondary: #2E86F5;
+  --accent: #B347E0;
+  --success: #33C481;
+  --danger: #FF5C7A;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 2px 8px rgba(20, 18, 42, 0.06);
+  --shadow-md: 0 8px 30px rgba(20, 18, 42, 0.10);
+  --shadow-lg: 0 20px 60px rgba(20, 18, 42, 0.16);
+
+  --gradient-primary: linear-gradient(135deg, #2E86F5 0%, #7C5CFC 55%, #B347E0 130%);
+  --gradient-hero: radial-gradient(120% 120% at 20% 0%, #241F52 0%, #141225 45%, #0A0910 100%);
+  --gradient-cta: linear-gradient(120deg, #2E86F5 0%, #7C5CFC 50%, #B347E0 150%);
+
+  --max-width: 1240px;
+
+  color-scheme: light;
+  --bg: #F7F6FC;
+  --surface: #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  --text-primary: #14122A;
+  --text-secondary: #5B5876;
+  --border: #E7E4F5;
+  --nav-bg: rgba(247, 246, 252, 0.75);
+  --overlay-tint: rgba(124, 92, 252, 0.06);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0A0918;
+  --surface: #15132B;
+  --surface-elevated: #1C1A38;
+  --text-primary: #F3F1FC;
+  --text-secondary: #A6A2C4;
+  --border: #2A2750;
+  --nav-bg: rgba(10, 9, 24, 0.7);
+  --overlay-tint: rgba(124, 92, 252, 0.10);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.30);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.55);
+}

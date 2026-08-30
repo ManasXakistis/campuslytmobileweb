@@ -1,0 +1,25 @@
+.meet { background: var(--gradient-hero); }
+.meet .section-heading h2, .meet .section-heading__subtitle { color: #fff; }
+.meet .section-heading__subtitle { color: rgba(255,255,255,0.7); }
+
+.meet__inner { display: flex; flex-direction: column; align-items: center; }
+.meet__graph { width: 100%; max-width: 560px; }
+
+.meet__legend {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+.meet__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+}
+.meet__dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.meet__dot--primary { background: var(--primary); }
+.meet__dot--secondary { background: var(--secondary); }
+.meet__dot--accent { background: var(--accent); }

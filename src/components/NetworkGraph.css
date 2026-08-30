@@ -1,0 +1,13 @@
+.network-graph {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.network-graph__link {
+  stroke: var(--primary);
+  stroke-width: 1.4;
+}
+.network-graph__node--primary { fill: var(--primary); }
+.network-graph__node--secondary { fill: var(--secondary); }
+.network-graph__node--accent { fill: var(--accent); }
+.network-graph__node--faint { fill: var(--text-secondary); opacity: 0.4; }
