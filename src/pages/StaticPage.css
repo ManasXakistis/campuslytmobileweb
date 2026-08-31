@@ -1,58 +1,68 @@
-/* Privacy Policy Read More */
+.page-hero {
+  padding: 90px 0 50px;
+  background: var(--gradient-hero);
+}
+.page-hero .eyebrow { color: var(--secondary); }
+.page-hero h1 {
+  color: #fff;
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 14px 0;
+}
+.page-hero p {
+  color: rgba(255,255,255,0.72);
+  font-size: 16px;
+  max-width: 60ch;
+}
 
-.privacy-read-more {
+.static-page {
+  padding: 70px 0 100px;
+}
+.static-page__content {
+  max-width: 760px;
   display: flex;
-  justify-content: center;
-  margin: 2rem 0;
+  flex-direction: column;
+  gap: 26px;
+}
+.static-page__content h2 {
+  font-size: 21px;
+  color: var(--text-primary);
+  margin-top: 8px;
+}
+.static-page__content p, .static-page__content li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.static-page__content ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.static-page__updated {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
 }
 
-.privacy-read-more__button {
-  border: none;
-  background: transparent;
-  color: var(--primary-color, #6c63ff);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 0.75rem 1.25rem;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.privacy-read-more__button:hover {
-  opacity: 0.8;
-  transform: translateY(-1px);
-}
-
-.privacy-full-policy {
-  margin-top: 2rem;
-  animation: privacyFadeIn 0.25s ease;
-}
-
-.privacy-full-policy h3 {
-  margin-top: 1.75rem;
-}
-
-.privacy-full-policy ul,
-.privacy-full-policy ol {
-  padding-left: 1.5rem;
-}
-
-.privacy-full-policy li {
-  margin-bottom: 0.75rem;
-}
-
-.privacy-full-policy a {
-  color: inherit;
-  text-decoration: underline;
-}
-
-@keyframes privacyFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
+@media (max-width: 600px) {
+  .page-hero {
+    padding: 64px 0 38px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .page-hero h1 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  .page-hero p {
+    font-size: 15px;
+  }
+
+  .static-page {
+    padding: 52px 0 72px;
+  }
+
+  .static-page__content {
+    gap: 20px;
+  }
+
+  .static-page__content p,
+  .static-page__content li {
+    font-size: 14.5px;
   }
 }
