@@ -86,7 +86,7 @@ export const appShowcaseScreens = [
   { id: 'profile', label: 'Profile', caption: 'Your identity: branch, year, interests.', screenshot: 'Profile' },
   { id: 'connections', label: 'Connections', caption: 'Students, seniors, and alumni in one list.', screenshot: 'Connections' },
   { id: 'chat', label: 'Chat', caption: 'Direct messages, kept simple.', screenshot: 'Chat' },
-  { id: 'groups', label: 'Groups', caption: 'Communities built around your interests.', screenshot: null },
+  /*{ id: 'groups', label: 'Groups', caption: 'Communities built around your interests.', screenshot: null },*/
   { id: 'news', label: 'News', caption: 'Campus events and announcements.', screenshot: 'News' },
 ];
 
