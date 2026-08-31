@@ -1,4 +1,3 @@
-```jsx
 import { useState } from 'react';
 import Seo from '../components/Seo';
 import usePageView from '../hooks/usePageView';
@@ -59,25 +58,25 @@ export default function Privacy() {
           {/* READ MORE BUTTON */}
           <div
             style={{
-              display: 'flex',
-              justifyContent: 'center',
-              margin: '30px 0',
+              textAlign: 'center',
+              margin: '35px 0',
             }}
           >
             <button
-              type="button"
-              onClick={() => setShowFullPolicy(!showFullPolicy)}
+              onClick={() => setShowFullPolicy(true)}
               style={{
-                background: 'none',
-                border: 'none',
-                padding: '10px 20px',
-                color: 'var(--primary-color, #6c63ff)',
+                display: 'inline-block',
+                padding: '12px 28px',
+                borderRadius: '999px',
+                border: '1px solid #6c63ff',
+                background: '#6c63ff',
+                color: '#fff',
                 fontSize: '16px',
                 fontWeight: '600',
                 cursor: 'pointer',
               }}
             >
-              {showFullPolicy ? 'Read Less ↑' : 'Read More ↓'}
+              Read More ↓
             </button>
           </div>
 
@@ -97,9 +96,9 @@ export default function Privacy() {
               <ul>
                 <li>
                   <strong>Authentication Credentials:</strong> Institutional
-                  Google account details, including student email ending in
+                  Google account details (e.g., student email ending in
                   @vitbhopal.ac.in, Google User ID, and basic profile
-                  verification.
+                  verification).
                 </li>
 
                 <li>
@@ -159,8 +158,8 @@ export default function Privacy() {
               <ul>
                 <li>
                   <strong>Device & Sync Tokens:</strong> Firebase Cloud
-                  Messaging (FCM) device push tokens used for notifications
-                  and JSON Web Tokens (JWT) for API authorization.
+                  Messaging device push tokens and JSON Web Tokens (JWT)
+                  for API authorization.
                 </li>
 
                 <li>
@@ -172,14 +171,12 @@ export default function Privacy() {
                 <li>
                   <strong>Session & Analytics Data:</strong> Aggregated usage
                   metrics such as session duration, screens visited,
-                  features utilized, search queries, and message counts used
-                  to enhance app performance and eliminate bugs.
+                  features utilized, search queries, and message counts.
                 </li>
 
                 <li>
                   <strong>Network & Diagnostics:</strong> IP address, device
-                  model, operating system version, and crash logs for
-                  stability monitoring.
+                  model, operating system version, and crash logs.
                 </li>
               </ul>
 
@@ -195,8 +192,8 @@ export default function Privacy() {
 
               <p>
                 Other users see a deterministically generated pseudonym,
-                such as <em>"Adjective Noun 🎭"</em>, a masked avatar, and
-                non-identifying filters such as gender and branch.
+                such as <em>"Adjective Noun 🎭"</em>, a masked avatar,
+                and non-identifying filters such as gender and branch.
               </p>
 
               <p>
@@ -208,25 +205,23 @@ export default function Privacy() {
               <h3>Mutual Reveal</h3>
 
               <p>
-                Once <strong>both</strong> participants explicitly accept a
-                "Reveal Request", real names, registration numbers, bios,
+                Once <strong>both</strong> participants explicitly accept
+                a "Reveal Request", real names, registration numbers, bios,
                 and full profile photos are unmasked for that specific chat.
               </p>
 
               <h3>Explore / Discovery</h3>
 
               <p>
-                Card stack displays public discovery attributes such as
-                Branch, Year, State, City, Clubs, and Bio. You can toggle
-                Explore visibility off at any time.
+                The Explore card stack displays public discovery attributes
+                such as Branch, Year, State, City, Clubs, and Bio. You can
+                toggle Explore visibility off at any time.
               </p>
 
               <p>
                 <strong>Backend Accountability:</strong> While peers cannot
                 see your identity during anonymous interactions, CampusLYT
-                maintains backend accountability. Anonymity cannot be
-                weaponized for harassment, hate speech, stalking, or
-                malicious conduct.
+                maintains backend accountability.
               </p>
 
               <h2>3. How We Use Your Information</h2>
@@ -258,14 +253,14 @@ export default function Privacy() {
 
                 <li>
                   <strong>Personalization & Device Sync:</strong>{' '}
-                  Synchronizing custom color palettes, read states, and chat
-                  preferences.
+                  Synchronizing custom color palettes, read states, and
+                  chat preferences.
                 </li>
 
                 <li>
                   <strong>Platform Reliability & Engineering:</strong>{' '}
-                  Monitoring uptime, optimizing image compression, fixing
-                  crashes, and improving responsiveness.
+                  Monitoring uptime, fixing crashes, and improving
+                  application responsiveness.
                 </li>
               </ol>
 
@@ -274,81 +269,63 @@ export default function Privacy() {
               <p>
                 <strong>
                   We do NOT sell, rent, monetize, or trade your personal
-                  information or chat content to third-party advertisers or
-                  data brokers.
+                  information or chat content to third-party advertisers
+                  or data brokers.
                 </strong>
-              </p>
-
-              <p>
-                We only share data with trusted third-party service providers
-                that enable core platform operations:
               </p>
 
               <ul>
                 <li>
                   <strong>Google Cloud Platform / Firebase:</strong>{' '}
-                  Firestore, Google OAuth single sign-on, and Firebase Cloud
-                  Messaging.
+                  Firestore, Google OAuth, and Firebase Cloud Messaging.
                 </li>
 
                 <li>
                   <strong>Amazon Web Services (AWS):</strong> Secure,
-                  encrypted AWS S3 cloud object storage for profile images,
+                  encrypted cloud object storage for profile images,
                   chat photos, and voice notes.
                 </li>
 
                 <li>
                   <strong>Gmail API / SMTP Services:</strong> Automated
-                  transactional notifications, onboarding emails, secondary
-                  email OTP verification, and peer invitations.
+                  transactional notifications and email verification.
                 </li>
 
                 <li>
                   <strong>Legal Compliance & Campus Safety:</strong> We may
-                  disclose necessary information if required by law,
-                  subpoena, court order, or to protect physical safety,
-                  rights, or property against imminent harm.
+                  disclose necessary information if required by law or to
+                  protect users and the community against imminent harm.
                 </li>
               </ul>
 
               <h2>5. Data Security Measures</h2>
 
-              <p>
-                We implement multi-layered technical, cryptographic, and
-                operational safeguards to protect your personal information.
-              </p>
-
               <ul>
                 <li>
                   <strong>Transport Encryption:</strong> Network
-                  communications between the application and backend
-                  servers are encrypted using industry-standard TLS / HTTPS.
+                  communications use TLS / HTTPS.
                 </li>
 
                 <li>
                   <strong>Token-Based Authentication:</strong> JWT
-                  authorization with short-lived access tokens, refresh token
-                  rotation, and blacklisting capabilities upon logout or ban.
+                  authorization with short-lived access tokens and refresh
+                  token rotation.
                 </li>
 
                 <li>
                   <strong>Private Object Storage:</strong> S3 media buckets
-                  have public access blocked. Chat media access is gated
-                  behind short-lived pre-signed URLs or authenticated
-                  proxy endpoints.
+                  have public access blocked.
                 </li>
 
                 <li>
                   <strong>Hashed Secrets:</strong> Sensitive verification
                   tokens and OTPs are hashed using cryptographic algorithms
-                  such as SHA-256 before database persistence.
+                  such as SHA-256.
                 </li>
 
                 <li>
-                  <strong>Role-Based Moderation Access:</strong>{' '}
-                  Administrative and moderator dashboard views use
-                  multi-tiered permissions to limit staff access to data
-                  required for specific safety tasks.
+                  <strong>Role-Based Moderation Access:</strong> Staff
+                  access is restricted according to required safety tasks.
                 </li>
               </ul>
 
@@ -358,24 +335,22 @@ export default function Privacy() {
                 <li>
                   <strong>Active Retention:</strong> We retain profile data,
                   connection records, and chat history while your account
-                  remains active and in good standing.
+                  remains active.
                 </li>
 
                 <li>
-                  <strong>Media Cleanup:</strong> When you update or replace
-                  your profile picture, the previous image file is
-                  automatically deleted from our S3 storage buckets.
+                  <strong>Media Cleanup:</strong> Previous profile images
+                  are automatically deleted when replaced.
                 </li>
 
                 <li>
                   <strong>Temporary Verification Data:</strong> Secondary
-                  email OTPs expire automatically within 10 minutes of
-                  issuance and are marked as used.
+                  email OTPs expire within 10 minutes.
                 </li>
 
                 <li>
-                  <strong>Account Deletion Rights:</strong> You have the right
-                  to delete your account at any time.
+                  <strong>Account Deletion Rights:</strong> You can delete
+                  your account at any time.
                 </li>
               </ol>
 
@@ -388,36 +363,27 @@ export default function Privacy() {
                 .
               </p>
 
-              <p>
-                Upon confirmed deletion, your profile record, personal
-                preferences, linked secondary emails, and active tokens are
-                purged from our primary databases in accordance with our data
-                destruction protocols.
-              </p>
-
               <h2>7. Your Privacy Controls and Rights</h2>
 
               <ul>
                 <li>
                   <strong>Explore Visibility:</strong> You can hide your
-                  profile from the Explore card stack at any time.
+                  profile from the Explore card stack.
                 </li>
 
                 <li>
-                  <strong>Block and Mute Controls:</strong> You can block any
-                  user to terminate bidirectional communications and hide
-                  your profile updates from them.
+                  <strong>Block and Mute Controls:</strong> You can block
+                  any user to terminate communications.
                 </li>
 
                 <li>
-                  <strong>Secondary Email Management:</strong> You can link,
-                  verify, or unlink your secondary email address.
+                  <strong>Secondary Email Management:</strong> You can
+                  link, verify, or unlink your secondary email.
                 </li>
 
                 <li>
                   <strong>Access & Correction:</strong> You can update your
-                  bio, branch, state, city, club name, company details, and
-                  profile photo directly within the app.
+                  profile information directly within the app.
                 </li>
               </ul>
 
@@ -426,10 +392,7 @@ export default function Privacy() {
               <p>
                 CampusLYT is strictly intended for college students who are{' '}
                 <strong>18 years of age or older</strong>. We do not knowingly
-                collect, solicit, or maintain personal data from individuals
-                under the age of 18. If we discover that a user under 18 has
-                registered, we will promptly terminate the account and purge
-                their data.
+                collect personal data from individuals under 18.
               </p>
 
               <h2>9. Changes to This Privacy Policy</h2>
@@ -437,18 +400,15 @@ export default function Privacy() {
               <p>
                 We may update this Privacy Policy from time to time to
                 accommodate new features, evolving technologies, or regulatory
-                requirements. Any modifications will be posted within the
-                application with an updated "Last Updated" date. Material
-                changes may be communicated through prominent in-app alerts
-                or push notifications.
+                requirements. Material changes may be communicated through
+                prominent in-app alerts or push notifications.
               </p>
 
               <h2>10. Contact Us & Grievance Redressal</h2>
 
               <p>
                 If you have questions, concerns, feedback, or requests
-                regarding this Privacy Policy or our data handling practices,
-                please reach out to us:
+                regarding this Privacy Policy, contact us:
               </p>
 
               <ul>
@@ -479,19 +439,19 @@ export default function Privacy() {
               {/* READ LESS */}
               <div
                 style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  margin: '30px 0',
+                  textAlign: 'center',
+                  margin: '35px 0',
                 }}
               >
                 <button
-                  type="button"
                   onClick={() => setShowFullPolicy(false)}
                   style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: '10px 20px',
-                    color: 'var(--primary-color, #6c63ff)',
+                    display: 'inline-block',
+                    padding: '12px 28px',
+                    borderRadius: '999px',
+                    border: '1px solid #6c63ff',
+                    background: '#6c63ff',
+                    color: '#fff',
                     fontSize: '16px',
                     fontWeight: '600',
                     cursor: 'pointer',
@@ -509,4 +469,3 @@ export default function Privacy() {
     </>
   );
 }
-```
