@@ -188,8 +188,8 @@ export const footerLinks = {
   navigation: [
     { label: 'Home', href: '/' },
     { label: 'Features', href: '/features' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'About', href: 'src\pages\About.jsx' },
+    { label: 'Contact', href: 'src\pages\Contact.jsx' },
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms', href: '/terms' },
     { label: 'Community Guidelines', href: '/community-guidelines' },
