@@ -15,6 +15,7 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import CommunityGuidelines from './pages/CommunityGuidelines';
+import DeleteAccount from './pages/DeleteAccount';
 
 // Admin routes are code-split: charting/CMS code only ships to visitors who
 // actually navigate to /admin, keeping the public marketing bundle lean.
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/privacy" element={<PublicLayout><Privacy /></PublicLayout>} />
           <Route path="/terms" element={<PublicLayout><Terms /></PublicLayout>} />
           <Route path="/community-guidelines" element={<PublicLayout><CommunityGuidelines /></PublicLayout>} />
+          <Route path="/delete-account" element={<PublicLayout><DeleteAccount /></PublicLayout>} />
 
           <Route
             path="/admin/login"

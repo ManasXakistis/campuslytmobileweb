@@ -193,6 +193,7 @@ export const footerLinks = {
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms', href: '/terms' },
     { label: 'Community Guidelines', href: '/community-guidelines' },
+    { label: 'Delete Account', href: '/delete-account' },
   ],
   // Only include a social link here once the account actually exists.
   social: [
