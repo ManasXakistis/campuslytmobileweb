@@ -186,21 +186,21 @@ export const contactCategories = [
 
 export const footerLinks = {
   navigation: [
-    { label: 'Home', href: '/' },
-    { label: 'Features', href: '/features' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms', href: '/terms' },
-    { label: 'Community Guidelines', href: '/community-guidelines' },
-    { label: 'Delete Account', href: '/delete-account' },
+    { label: 'Home', href:'/Home' },
+    { label: 'Features', href:'/features' },
+    { label: 'About', href:'/about' },
+    { label: 'Contact', href:'/contact' },
+    { label: 'Privacy Policy', href:'/privacy' },
+    { label: 'Terms', href:'/terms' },
+    { label: 'Community Guidelines', href:'/community-guidelines' },
+    { label: 'Delete Account', href:'/delete-account' },
   ],
 
   // your social links...
 };
-  ],
+  
   // Only include a social link here once the account actually exists.
   social: [
     // { label: 'Instagram', href: 'https://instagram.com/campuslyt' },
-  ],
-};
+  ]
+
