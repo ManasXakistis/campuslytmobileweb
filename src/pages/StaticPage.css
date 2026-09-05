@@ -4,12 +4,12 @@
 }
 .page-hero .eyebrow { color: var(--secondary); }
 .page-hero h1 {
-  color: #fff;
+  color: var(--hero-text);
   font-size: clamp(32px, 5vw, 48px);
   margin: 14px 0;
 }
 .page-hero p {
-  color: rgba(255,255,255,0.72);
+  color: var(--hero-muted);
   font-size: 16px;
   max-width: 60ch;
 }
