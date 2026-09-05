@@ -8,88 +8,44 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-
-        {/* Brand Section */}
         <div className="footer__brand">
           <Link to="/" className="footer__logo">
-            <img
-              src={logo}
-              alt="CampusLYT logo"
-              className="footer__logo-mark"
-            />
-            {brand.name}
+            <img src={logo} alt="CampusLYT logo" className="footer__logo-mark" /> {brand.name}
           </Link>
-
           <p>{brand.tagline}</p>
-
           <DownloadButton variant="compact" />
         </div>
 
-
-        {/* Navigate Section */}
-        <nav className="footer__nav" aria-label="Footer Navigation">
+        <nav className="footer__nav" aria-label="Footer">
           <span className="eyebrow">Navigate</span>
-
           {footerLinks.navigation.map((l) => (
             <div className="footer__link-row" key={l.label}>
-
-              {/* Opens in the same tab */}
-              <Link to={l.href}>
-                {l.label}
-              </Link>
-
-              {/* Opens in a new tab */}
-              <a
+              <Link to={l.href}>{l.label}</Link>
+              <Link
                 className="footer__new-tab"
-                href={`${window.location.origin}${l.href}`}
+                to={l.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Open ${l.label} in a new tab`}
-                title={`Open ${l.label} in a new tab`}
+                title="Open in new tab"
               >
                 ↗
-              </a>
-
+              </Link>
             </div>
           ))}
         </nav>
 
-
-        {/* Account & Social Section */}
         <div className="footer__social">
           <span className="eyebrow">Account</span>
-
-          {/* Account deletion page */}
-          <Link to="/delete-account">
-            Request account deletion
-          </Link>
-
-          <p className="footer__account-note">
-            We'll review and process your request securely.
-          </p>
-
-
-          {/* Social Links */}
+          <Link to="/delete-account">Request account deletion</Link>
+          <p className="footer__account-note">We'll review and process your request securely.</p>
           {footerLinks.social.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {s.label}
-            </a>
+            <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer">{s.label}</a>
           ))}
         </div>
-
       </div>
-
-
-      {/* Bottom Footer */}
       <div className="container footer__bottom">
-        <p>
-          © {new Date().getFullYear()} {brand.name}. All rights reserved.
-        </p>
+        <p>© {new Date().getFullYear()} {brand.name}. All rights reserved.</p>
       </div>
     </footer>
   );

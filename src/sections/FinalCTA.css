@@ -11,20 +11,20 @@
 }
 .final-cta h2 {
   font-size: clamp(30px, 5vw, 50px);
-  color: var(--hero-text);
+  color: #fff;
   max-width: 700px;
 }
 .final-cta p {
-  color: var(--hero-muted);
+  color: rgba(255,255,255,0.85);
   font-size: 17px;
   margin-bottom: 12px;
 }
 .final-cta .btn-primary {
-  background: var(--surface);
+  background: #fff;
   color: var(--primary-dark);
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
-.final-cta .btn-ghost { color: var(--hero-text); border-color: var(--hero-border); }
+.final-cta .btn-ghost { color: #fff; border-color: rgba(255,255,255,0.4); }
 
 @media (max-width: 600px) {
   .final-cta {

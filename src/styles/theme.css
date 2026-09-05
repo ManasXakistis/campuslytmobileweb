@@ -1,11 +1,11 @@
 :root {
-  /* Warm, human-first campus palette: ink, paper, forest and terracotta. */
-  --primary: #2F6B57;
-  --primary-dark: #245342;
-  --secondary: #C86445;
-  --accent: #C49A3A;
-  --success: #4F7D5F;
-  --danger: #B84D4D;
+  /* Palette sampled directly from the CampusLYT app logo: blue -> violet -> magenta */
+  --primary: #635BFF;
+  --primary-dark: #4F46C8;
+  --secondary: #2E86F5;
+  --accent: #A855F7;
+  --success: #33C481;
+  --danger: #FF5C7A;
 
   --font-display: 'DM Sans', 'Segoe UI', sans-serif;
   --font-body: 'Nunito Sans', 'Segoe UI', sans-serif;
@@ -16,45 +16,38 @@
   --radius-lg: 24px;
   --radius-full: 999px;
 
-  --shadow-sm: 0 2px 8px rgba(37, 43, 38, 0.07);
-  --shadow-md: 0 10px 28px rgba(37, 43, 38, 0.10);
-  --shadow-lg: 0 20px 55px rgba(37, 43, 38, 0.15);
+  --shadow-sm: 0 2px 8px rgba(20, 18, 42, 0.06);
+  --shadow-md: 0 8px 30px rgba(20, 18, 42, 0.10);
+  --shadow-lg: 0 20px 60px rgba(20, 18, 42, 0.16);
 
-  /* Intentionally restrained: no neon blue/purple AI-style gradient. */
-  --gradient-primary: linear-gradient(135deg, #2F6B57 0%, #3E7A63 100%);
-  --gradient-hero: radial-gradient(100% 120% at 15% 0%, #244A3C 0%, #17342B 48%, #10261F 100%);
-  --gradient-cta: linear-gradient(120deg, #2F6B57 0%, #3A735E 100%);
+  --gradient-primary: linear-gradient(135deg, #2E86F5 0%, #7C5CFC 55%, #B347E0 130%);
+  --gradient-hero: radial-gradient(120% 120% at 20% 0%, #241F52 0%, #141225 45%, #0A0910 100%);
+  --gradient-cta: linear-gradient(120deg, #2E86F5 0%, #7C5CFC 50%, #B347E0 150%);
 
   --max-width: 1240px;
 
   color-scheme: light;
-  --bg: #F4F0E7;
-  --surface: #FFFDF8;
+  --bg: #F7F6FC;
+  --surface: #FFFFFF;
   --surface-elevated: #FFFFFF;
-  --text-primary: #202B25;
-  --text-secondary: #667068;
-  --border: #DED8CA;
-  --nav-bg: rgba(244, 240, 231, 0.86);
-  --overlay-tint: rgba(47, 107, 87, 0.07);
-  --hero-text: #FFFDF7;
-  --hero-muted: rgba(255, 253, 247, 0.74);
-  --hero-border: rgba(255, 253, 247, 0.28);
+  --text-primary: #14122A;
+  --text-secondary: #5B5876;
+  --border: #E7E4F5;
+  --nav-bg: rgba(247, 246, 252, 0.75);
+  --overlay-tint: rgba(124, 92, 252, 0.06);
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #121A16;
-  --surface: #19231E;
-  --surface-elevated: #202D26;
-  --text-primary: #F5F1E8;
-  --text-secondary: #B2BBB5;
-  --border: #304039;
-  --nav-bg: rgba(18, 26, 22, 0.84);
-  --overlay-tint: rgba(103, 165, 136, 0.10);
-  --hero-text: #FFFDF7;
-  --hero-muted: rgba(255, 253, 247, 0.74);
-  --hero-border: rgba(255, 253, 247, 0.28);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.34);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.46);
+  --bg: #0A0918;
+  --surface: #15132B;
+  --surface-elevated: #1C1A38;
+  --text-primary: #F3F1FC;
+  --text-secondary: #A6A2C4;
+  --border: #2A2750;
+  --nav-bg: rgba(10, 9, 24, 0.7);
+  --overlay-tint: rgba(124, 92, 252, 0.10);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.30);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.55);
 }
