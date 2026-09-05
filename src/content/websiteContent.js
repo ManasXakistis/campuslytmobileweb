@@ -195,6 +195,10 @@ export const footerLinks = {
     { label: 'Community Guidelines', href: '/community-guidelines' },
     { label: 'Delete Account', href: '/delete-account' },
   ],
+
+  // your social links...
+};
+  ],
   // Only include a social link here once the account actually exists.
   social: [
     // { label: 'Instagram', href: 'https://instagram.com/campuslyt' },
