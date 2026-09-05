@@ -21,16 +21,16 @@ export default function Footer() {
           {footerLinks.navigation.map((l) => (
             <div className="footer__link-row" key={l.label}>
               <Link to={l.href}>{l.label}</Link>
-              <Link
+              <a
                 className="footer__new-tab"
-                to={l.href}
+                href={l.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`Open ${l.label} in a new tab`}
-                title="Open in new tab"
+                title={`Open ${l.label} in a new tab`}
               >
                 ↗
-              </Link>
+              </a>
             </div>
           ))}
         </nav>
