@@ -29,9 +29,9 @@ export default function Terms() {
       <section className="section static-page">
         <div className="container static-page__content">
 
-          <p className="static-page__updated">
+          {/*<p className="static-page__updated">
             Last updated: August 30, 2026
-          </p>
+          </p>*/}
 
           <h2>Using CampusLYT</h2>
 
