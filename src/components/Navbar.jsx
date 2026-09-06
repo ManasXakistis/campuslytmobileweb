@@ -57,10 +57,16 @@ export default function Navbar() {
 
         <nav className="navbar__links" aria-label="Primary">
           {LINKS.map((l) => (
-            <NavLink key={l.label} to={l.href} className="navbar__link" onClick={(e) => handleNav(e, l.href)}>
-              {l.label}
-            </NavLink>
-          ))}
+  <NavLink
+    key={l.label}
+    to={l.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="navbar__link"
+  >
+    {l.label}
+  </NavLink>
+))}
         </nav>
 
         <div className="navbar__actions">
@@ -81,10 +87,17 @@ export default function Navbar() {
       {open && (
         <div className="navbar__mobile">
           {LINKS.map((l) => (
-            <NavLink key={l.label} to={l.href} className="navbar__mobile-link" onClick={(e) => { handleNav(e, l.href); if (!l.href.startsWith("/#")) setOpen(false); }}>
-              {l.label}
-            </NavLink>
-          ))}
+  <NavLink
+    key={l.label}
+    to={l.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="navbar__mobile-link"
+    onClick={() => setOpen(false)}
+  >
+    {l.label}
+  </NavLink>
+))}
           <DownloadButton />
         </div>
       )}
