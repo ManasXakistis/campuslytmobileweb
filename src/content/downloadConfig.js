@@ -2,7 +2,7 @@
 // Never hardcode production store links here — see .env.example.
 
 export const downloadConfig = {
-  android: import.meta.env.VITE_ANDROID_DOWNLOAD_URL || 'https://campuslyt.in/download-app/',
+  android: import.meta.env.VITE_ANDROID_DOWNLOAD_URL || 'https://play.google.com/store/apps/details?id=in.campuslyt.app',
   ios: import.meta.env.VITE_IOS_DOWNLOAD_URL || '',
 };
 
